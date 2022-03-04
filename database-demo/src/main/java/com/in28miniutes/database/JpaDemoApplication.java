@@ -37,9 +37,9 @@ repository.insert(new Person( "Pieter", "Utrecht", new Date())));
 Person person = repository.findById(1);
 logger.info("Employee -> {}",person);
 
-Person updatedPerson = repository.updatePerson(2,"Pieter", "london", new Date());
+Person updatedPerson = repository.updatePerson(2,"Pieter", "Dubai", new Date());
 logger.info("Updated Employee -> {}",updatedPerson);
-
+//Repository.deleteBy(1);
 
 
 logger.info("All users -> {}", repository.findAll());
